@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Q3 Drill 1 - Average Checker</title>
+
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+<py-config>
+[[fetch]]
+files = ["main.py"]
+</py-config>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#eef2f7;
+    padding:40px;
+}
+
+.container{
+    max-width:420px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    text-align:center;
+    color:#333;
+}
+
+label{
+    font-weight:bold;
+}
+
+input{
+    width:100%;
+    padding:8px;
+    margin-bottom:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background-color:#4CAF50;
+    border:none;
+    color:white;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:#3f9442;
+}
+
+.result{
+    margin-top:15px;
+    font-size:18px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Average Grade Checker</h2>
+
+<label>Score 1</label>
+<input id="score1" type="number">
+
+<label>Score 2</label>
+<input id="score2" type="number">
+
+<label>Score 3</label>
+<input id="score3" type="number">
+
+<label>Score 4</label>
+<input id="score4" type="number">
+
+<label>Score 5</label>
+<input id="score5" type="number">
+
+<label>Score 6</label>
+<input id="score6" type="number">
+
+<label>Score 7</label>
+<input id="score7" type="number">
+<button py-click="compute_average">Compute Average</button>
+
+<div class="result">
+<p>Average: <span id="average"></span></p>
+<p>Status: <span id="result"></span></p>
+</div>
+
+</div>
+
+</body>
+</html>
